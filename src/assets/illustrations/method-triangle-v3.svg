@@ -1,0 +1,20 @@
+<svg width="1276" height="867" xmlns="http://www.w3.org/2000/svg" style="vector-effect: non-scaling-stroke;">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+ <defs style="vector-effect: non-scaling-stroke;">
+  <filter style="vector-effect: non-scaling-stroke;" id="svg_1_blur">
+   <feGaussianBlur style="vector-effect: non-scaling-stroke;" stdDeviation="0" in="SourceGraphic"/>
+  </filter>
+  <filter id="svg_3_blur">
+   <feGaussianBlur stdDeviation="0" in="SourceGraphic"/>
+  </filter>
+ </defs>
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="869" width="1278" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <path opacity="1" filter="url(#svg_1_blur)" transform="rotate(-180, 1076.92, 239.852)" id="svg_1" d="m457.6893,803.38913l619.23511,-1127.07346l619.23511,1127.07346l-1238.47023,0z" stroke-width="0" fill="#f3f3f3"/>
+  <path filter="url(#svg_3_blur)" opacity="0.5" id="svg_3" d="m331.84493,1101.81699l585.52648,-949.09967l585.52648,949.09967l-1171.05297,0z" stroke-width="0" fill="#33666C"/>
+ </g>
+</svg>
