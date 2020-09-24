@@ -9,14 +9,15 @@ export const Wrapper = styled.div`
   background-repeat: no-repeat;
 `;
 
-export const IntroWrapper = styled.div`
-  padding: 4rem 0;
+export const HeroWrapper = styled.div`
+  padding: 8rem 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
 
   @media (max-width: 960px) {
     flex-direction: column;
+    padding: 4rem 0;
   }
 `;
 
@@ -57,7 +58,7 @@ export const Details = styled.div`
     }
   }
 `;
-
+/* 
 export const Thumbnail = styled.div`
   flex: 1;
 
@@ -66,6 +67,6 @@ export const Thumbnail = styled.div`
   }
 
   img {
-    width: 100%;
+    width: 60%;
   }
-`;
+`; */
