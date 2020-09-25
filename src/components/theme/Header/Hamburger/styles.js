@@ -16,16 +16,16 @@ export const Wrapper = styled.div`
   ${({ sidebar }) =>
     sidebar &&
     `
-			right: 18%;
+			right: 1.8rem;
 			top: 1.4rem;
 		
 			@media (max-width: 960px) {
-				right: 35%;
+				right: 1.8rem;
 				position: fixed;
 			}
 		
 			@media (max-width: 600px) {
-				right: 66%;
+				right: 1.8rem;
 			}
 	`}
 `;

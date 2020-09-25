@@ -6,7 +6,7 @@ import { Container, Button } from 'components/common';
 import { Wrapper, HeroWrapper, Details, /* Thumbnail */ } from './styles';
 /* import logo from 'assets/logo/kovacs-mark-svg-logo.svg'; */
 
-export const Intro = () => {
+export const Hero = () => {
   const { theme } = useContext(ThemeContext);
 
   return (

@@ -28,13 +28,15 @@ export const Wrapper = styled.div`
 					}
 			}
 		`
-      : `
-			padding: 3rem;
+			: `
+			width: fit-content;
+			padding: 6rem 2.5rem;
 			display: flex;
 			flex-direction: column;
 
 			a {
-					margin-bottom: 1rem;
+					margin-bottom: 2rem;
+					padding: .5rem;
 
 					&:last-child {
 							margin-bottom: unset;

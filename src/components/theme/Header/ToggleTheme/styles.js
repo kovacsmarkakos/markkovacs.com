@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.button`
+  width: fit-content;
+  padding: .5rem;
   background: none;
   border: none;
   cursor: pointer;
@@ -12,6 +14,7 @@ export const Wrapper = styled.button`
   }
 
   @media (max-width: 960px) {
+    margin-top: 1rem;
     text-align: left;
   }
 
