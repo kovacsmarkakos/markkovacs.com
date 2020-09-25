@@ -5,14 +5,14 @@ import Sidebar from './Sidebar';
 import { Wrapper, Overlay } from './styles';
 
 export const Header = () => {
-  const [sidebar, toggle] = useState(false);
+  const [isSidebarOn, setIsSidebarOn] = useState(false);
 
   return (
     <Wrapper>
-      <Overlay sidebar={sidebar} onClick={() => toggle(!sidebar)} />
+      <Overlay isSidebarOn={isSidebarOn} onClick={() => setIsSidebarOn(!isSidebarOn)} />
       <Navbar />
-      <Hamburger sidebar={sidebar} toggle={toggle} />
-      <Sidebar sidebar={sidebar} toggle={toggle} />
+      <Hamburger isSidebarOn={isSidebarOn} setIsSidebarOn={setIsSidebarOn} />
+      <Sidebar isSidebarOn={isSidebarOn} setIsSidebarOn={setIsSidebarOn} />
     </Wrapper>
   );
 };

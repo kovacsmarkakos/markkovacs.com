@@ -13,8 +13,8 @@ export const Wrapper = styled.div`
     display: block;
   }
 
-  ${({ sidebar }) =>
-    sidebar &&
+  ${({ isSidebarOn }) =>
+    isSidebarOn &&
     `
 			right: 1.8rem;
 			top: 1.4rem;
@@ -44,25 +44,25 @@ export const Bar = styled.div`
 		width: 1.6rem;
 	}
 
-	${({ top, sidebar, theme }) =>
+	${({ top, isSidebarOn, theme }) =>
     top &&
-    sidebar &&
+    isSidebarOn &&
 		`
 		background-color: ${(theme === 'light' ? '#212121' : '#fff')};
 		transform: translateY(8px) rotate(-135deg);
 		
 	`}
 
-	${({ mid, sidebar }) =>
+	${({ mid, isSidebarOn }) =>
     mid &&
-    sidebar &&
+    isSidebarOn &&
 		`
 		transform: scale(0);
 		`}
 
-	${({ bottom, sidebar, theme }) =>
+	${({ bottom, isSidebarOn, theme }) =>
     bottom &&
-    sidebar &&
+    isSidebarOn &&
 		`
 			background-color: ${(theme === 'light' ? '#212121' : '#fff')};
 			transform: translateY(-6px) rotate(-45deg);

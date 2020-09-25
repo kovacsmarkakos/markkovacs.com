@@ -3,11 +3,11 @@ import { ThemeContext } from 'providers/ThemeProvider';
 import NavbarLinks from '../NavbarLinks';
 import { Wrapper } from './styles';
 
-const Sidebar = ({ sidebar, toggle }) => {
+const Sidebar = ({ isSidebarOn, setIsSidebarOn }) => {
   const { theme } = useContext(ThemeContext);
   
   return (
-  <Wrapper active={sidebar} onClick={toggle} theme={theme}>
+  <Wrapper active={isSidebarOn} onClick={setIsSidebarOn} theme={theme}>
     <NavbarLinks />
   </Wrapper>
   )

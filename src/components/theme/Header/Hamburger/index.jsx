@@ -2,15 +2,15 @@ import React, {useContext} from 'react';
 import { ThemeContext } from 'providers/ThemeProvider';
 import { Wrapper, Bar } from './styles';
 
-const Hamburger = ({ sidebar, toggle }) => {
+const Hamburger = ({ isSidebarOn, setIsSidebarOn }) => {
 
   const { theme } = useContext(ThemeContext);
   
   return (
-    <Wrapper sidebar={sidebar} onClick={() => toggle(!sidebar)}>
-      <Bar top sidebar={sidebar} theme={theme}/>
-      <Bar mid sidebar={sidebar} theme={theme} />
-      <Bar bottom sidebar={sidebar} theme={theme} />
+    <Wrapper isSidebarOn={isSidebarOn} onClick={() => setIsSidebarOn(!isSidebarOn)}>
+      <Bar top isSidebarOn={isSidebarOn} theme={theme}/>
+      <Bar mid isSidebarOn={isSidebarOn} theme={theme} />
+      <Bar bottom isSidebarOn={isSidebarOn} theme={theme} />
     </Wrapper>
   )
 };
