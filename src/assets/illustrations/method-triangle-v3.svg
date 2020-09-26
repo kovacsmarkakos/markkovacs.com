@@ -14,7 +14,7 @@
  </g>
  <g>
   <title>Layer 1</title>
-  <path opacity="1" filter="url(#svg_1_blur)" transform="rotate(-180, 1076.92, 239.852)" id="svg_1" d="m457.6893,803.38913l619.23511,-1127.07346l619.23511,1127.07346l-1238.47023,0z" stroke-width="0" fill="#f3f3f3"/>
+  <path filter="url(#svg_1_blur)" opacity="0.4" transform="rotate(-180, 1076.92, 239.852)" id="svg_1" d="m457.6893,803.38913l619.23511,-1127.07346l619.23511,1127.07346l-1238.47023,0z" stroke-width="0" fill="#000"/>
   <path filter="url(#svg_3_blur)" opacity="0.5" id="svg_3" d="m331.84493,1101.81699l585.52648,-949.09967l585.52648,949.09967l-1171.05297,0z" stroke-width="0" fill="#33666C"/>
  </g>
 </svg>

@@ -7,7 +7,7 @@
  </g>
  <g>
   <title>Layer 1</title>
-  <path transform="rotate(45, 17.5882, 657.429)" id="svg_1" d="m-378.60639,657.42883l396.19455,-396.19453l396.19455,396.19453l-396.19455,396.19453l-396.19455,-396.19453z" stroke-opacity="null" stroke-width="0" stroke="null" fill="#f3f3f3"/>
+  <path transform="rotate(45, 17.5882, 657.429)" opacity="0.4" id="svg_1" d="m-378.60639,657.42883l396.19455,-396.19453l396.19455,396.19453l-396.19455,396.19453l-396.19455,-396.19453z" stroke-opacity="null" stroke-width="0" stroke="null" fill="#000"/>
   <path transform="rotate(-68.2961, 180.75, 320.692)" opacity="0.5" id="svg_2" d="m-158.95441,320.69213l339.70459,-339.7045l339.70459,339.7045l-339.70459,339.7045l-339.70459,-339.7045z" stroke-opacity="null" stroke-width="0" stroke="null" fill="#33666c"/>
  </g>
 </svg>

@@ -2,19 +2,15 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   a {
-    color: #000;
+    color: ${({ theme }) => (theme === 'light' ? '#000' : '#fff')};
     text-decoration: none;
-
-    @media (max-width: 960px) {
-      color: ${({ theme }) => (theme === 'light' ? '#000' : '#fff')};
-    }
   }
 
   ${({ desktop }) =>
     desktop
       ? `
-			align-items: center;
 			display: flex;
+			align-items: center;
 
 			@media (max-width: 960px) {
 					display: none;
@@ -22,6 +18,7 @@ export const Wrapper = styled.div`
 
 			a {
 					margin-right: 1rem;
+					padding: .5rem;
 
 					&:last-child {
 							margin-right: unset;
