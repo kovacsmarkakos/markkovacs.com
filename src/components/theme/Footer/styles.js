@@ -40,7 +40,7 @@ export const Links = styled.div`
 
     &:hover {
       opacity: 0.8;
-      transform: translateY(-3px);
+      transform: translateY(-2px);
     }
   }
 `;

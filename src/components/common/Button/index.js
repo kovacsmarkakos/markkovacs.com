@@ -14,6 +14,7 @@ export const Button = styled.button`
   user-select: none;
   color: #fff;
   background: #333333;
+  transition: 0.3s;
 
   &:hover {
     opacity: 0.8;
