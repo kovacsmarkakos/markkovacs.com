@@ -26,6 +26,8 @@ export const Links = styled.div`
 
   a {
     margin: 0 0.5rem;
+    padding: 6px;
+    transition: all 0.2s;
 
     img {
       margin: 0;
@@ -34,6 +36,11 @@ export const Links = styled.div`
     &:first-child,
     &:last-child {
       margin: 0;
+    }
+
+    &:hover {
+      opacity: 0.8;
+      transform: translateY(-3px);
     }
   }
 `;
