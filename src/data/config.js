@@ -12,7 +12,7 @@ module.exports = {
     instagram: 'https://instagram.com/mark.akos',
   },
   googleAnalyticsID: '',
-  themeColor: '#aedbff',
+  themeColor: '#33666C',
   backgroundColor: '#fff',
   social: {
     facebook: '',
