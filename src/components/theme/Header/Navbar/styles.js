@@ -8,6 +8,7 @@ export const Wrapper = styled.div`
 `;
 
 export const Brand = styled.a`
+  padding: 8px 0px;
   color: ${({ theme }) => (theme === 'light' ? '#212121' : '#fff')};
 
   @media (max-width: 960px) {

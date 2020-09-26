@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.button`
-  width: 24px;
-  height: 24px;
-  padding: 0;
+  width: 22px;
+  height: 22px;
+  padding: 8px;
   background: none;
   border: none;
   cursor: pointer;

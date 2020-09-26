@@ -18,7 +18,7 @@ export const Wrapper = styled.div`
 
 			a {
 					margin-right: 1rem;
-					padding: .5rem;
+					padding: 8px;
 
 					&:last-child {
 							margin-right: unset;
@@ -33,7 +33,7 @@ export const Wrapper = styled.div`
 
 			a {
 					margin-bottom: 2rem;
-					padding: .5rem;
+					padding: 8px;
 
 					&:last-child {
 							margin-bottom: unset;
