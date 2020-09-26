@@ -1,16 +1,16 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-  padding: 28rem 0 4rem 0;
+  padding: 18rem 0 4rem 0;
 
   @media (max-width: 1960px) {
-    padding: 14rem 0 4rem;
+    padding: 8rem 0 4rem;
   }
 `;
 
 export const Flex = styled.div`
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: space-between;
 
   @media (max-width: 680px) {
