@@ -47,8 +47,8 @@ export const Bar = styled.div`
 	${({ top, isSidebarOn, theme }) =>
     top &&
     isSidebarOn &&
-		`
-		background-color: ${(theme === 'light' ? '#212121' : '#fff')};
+    `
+		background-color: ${theme === 'light' ? '#212121' : '#fff'};
 		transform: translateY(8px) rotate(-135deg);
 		
 	`}
@@ -56,15 +56,15 @@ export const Bar = styled.div`
 	${({ mid, isSidebarOn }) =>
     mid &&
     isSidebarOn &&
-		`
+    `
 		transform: scale(0);
 		`}
 
 	${({ bottom, isSidebarOn, theme }) =>
     bottom &&
     isSidebarOn &&
-		`
-			background-color: ${(theme === 'light' ? '#212121' : '#fff')};
+    `
+			background-color: ${theme === 'light' ? '#212121' : '#fff'};
 			transform: translateY(-6px) rotate(-45deg);
 	`}
 `;

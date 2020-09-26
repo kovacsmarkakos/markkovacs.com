@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.button`
   width: fit-content;
-  padding: .5rem;
+  padding: 0.5rem;
   background: none;
   border: none;
   cursor: pointer;

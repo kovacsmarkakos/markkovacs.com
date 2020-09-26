@@ -5,9 +5,9 @@ export const Wrapper = styled.div`
     color: #000;
     text-decoration: none;
 
-		@media (max-width: 960px) {
-			color: ${({ theme }) => (theme === 'light' ? '#000' : '#fff')};
-		}
+    @media (max-width: 960px) {
+      color: ${({ theme }) => (theme === 'light' ? '#000' : '#fff')};
+    }
   }
 
   ${({ desktop }) =>
@@ -28,7 +28,7 @@ export const Wrapper = styled.div`
 					}
 			}
 		`
-			: `
+      : `
 			width: fit-content;
 			padding: 6rem 2.5rem;
 			display: flex;
