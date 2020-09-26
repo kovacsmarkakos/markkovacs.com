@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
+	padding: 5px 0;
   z-index: 5;
   top: 1.6rem;
   right: 1.8rem;
@@ -39,6 +40,9 @@ export const Bar = styled.div`
 	opacity 500ms,
 	box-shadow 250ms,
 	background-color 500ms;
+	&:last-child {
+		margin-bottom: 0;
+	}
 
 	@media (max-width: 600px){
 		width: 1.6rem;
