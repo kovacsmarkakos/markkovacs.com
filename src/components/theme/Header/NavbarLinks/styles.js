@@ -3,34 +3,34 @@ import styled from 'styled-components';
 export const Wrapper = styled.div`
   a {
     display: inline-block;
-		position: relative;
-		text-decoration: none;
-		width: fit-content;
+    position: relative;
+    text-decoration: none;
+    width: fit-content;
     color: ${({ theme }) => (theme === 'light' ? '#000' : '#fff')};
 
-		&:after {
-			position: absolute;
-			content: "";
-			top: 92%;
-			left: 10%;
-			width: 80%;
-			height: 3px;
-			background: #33666C;
-			opacity: 0.6;
-			transform: scaleX(0);
-			transform-origin: right;
-			transition: transform 0.4s;
-		}
+    &:after {
+      position: absolute;
+      content: '';
+      top: 92%;
+      left: 10%;
+      width: 80%;
+      height: 3px;
+      background: #33666c;
+      opacity: 0.6;
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 0.4s;
+    }
 
-		&:hover:after {
-			transform: scaleX(1);
-			transform-origin: left;
-		}
+    &:hover:after {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
   }
 
   ${({ desktop }) =>
     desktop
-		? `
+      ? `
 			display: flex;
 			align-items: center;
 
@@ -47,7 +47,7 @@ export const Wrapper = styled.div`
 				}
 			}
 		`
-		: `
+      : `
 			padding: 6rem 2.5rem;
 			display: flex;
 			flex-direction: column;
