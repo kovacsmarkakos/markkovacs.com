@@ -4,14 +4,18 @@ import { ThemeContext } from 'providers/ThemeProvider';
 import ToggleTheme from 'components/theme/Header/ToggleTheme';
 import { Wrapper } from './styles';
 
-const NavbarLinks = ({ desktop }) => {
+const NavbarLinks = ({ desktop, isSidebarOn, setIsSidebarOn }) => {
   const { theme } = useContext(ThemeContext);
+
+  function handleClick() {
+    !desktop ? setIsSidebarOn(!isSidebarOn) : null
+  }
 
   return (
     <Wrapper desktop={desktop} theme={theme}>
-      <AnchorLink href="#projects">Projects</AnchorLink>
-      <AnchorLink href="#about">About</AnchorLink>
-      <AnchorLink href="#contact">Contact</AnchorLink>
+      <AnchorLink onClick={handleClick} href="#projects">Projects</AnchorLink>
+      <AnchorLink onClick={handleClick} href="#about">About</AnchorLink>
+      <AnchorLink onClick={handleClick} href="#contact">Contact</AnchorLink>
       <ToggleTheme />
     </Wrapper>
   )
