@@ -2,8 +2,7 @@ import React, { useContext } from 'react';
 import { ThemeContext } from 'providers/ThemeProvider';
 import { Container } from 'components/common';
 import { Wrapper, Flex, Links, Details } from './styles';
-import social from './social.json';
-import socialLight from './socialLight.json'
+import { lightIcons, darkIcons} from './icons.js';
 
 export const Footer = () => {
   const { theme } = useContext(ThemeContext);
@@ -22,13 +21,13 @@ export const Footer = () => {
         </Details>
         <Links>
           {theme === 'dark' ? 
-            socialLight.map(({ id, name, link, icon }) => (
+            lightIcons.map(({ id, name, link, icon }) => (
               <a key={id} href={link} target="_blank" rel="noopener noreferrer" aria-label={`follow me on ${name}`}>
                 <img width="24" src={icon} alt={name} />
               </a>
             ))
           :
-            social.map(({ id, name, link, icon }) => (
+            darkIcons.map(({ id, name, link, icon }) => (
               <a key={id} href={link} target="_blank" rel="noopener noreferrer" aria-label={`follow me on ${name}`}>
                 <img width="24" src={icon} alt={name} />
               </a>
