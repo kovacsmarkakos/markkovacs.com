@@ -4,7 +4,7 @@ import { ThemeContext } from 'providers/ThemeProvider';
 import { Container, Card } from 'components/common';
 import Star from 'components/common/Icons/Star';
 import Fork from 'components/common/Icons/Fork';
-import { Wrapper, Grid, Item, Content, Stats } from './styles';
+import { Wrapper, Grid, Item, Content, Stats, ImageContainer } from './styles';
 
 export const Projects = () => {
   const { theme } = useContext(ThemeContext);
@@ -19,12 +19,13 @@ export const Projects = () => {
       {
         github {
           viewer {
-            repositories(first: 8, orderBy: { field: STARGAZERS, direction: DESC }) {
+            repositories(first: 3, orderBy: {field: STARGAZERS, direction: DESC}) {
               edges {
                 node {
                   id
                   name
                   url
+                  homepageUrl
                   description
                   stargazers {
                     totalCount
@@ -43,11 +44,12 @@ export const Projects = () => {
       <h2>Projects</h2>
       <Grid>
         {edges.map(({ node }) => (
-          <Item key={node.id} as="a" href={node.url} target="_blank" rel="noopener noreferrer" theme={theme}>
+          <Item key={node.id} theme={theme}>
             <Card theme={theme}>
               <Content>
                 <h4>{node.name}</h4>
                 <p>{node.description}</p>
+                <p><a href={node.homepageUrl} target="_blank" rel="noopener noreferrer">Visit Demo</a></p> 
               </Content>
               <Stats theme={theme}>
                 <div>
@@ -60,6 +62,9 @@ export const Projects = () => {
                 </div>
               </Stats>
             </Card>
+            <ImageContainer>
+              <span>IMG</span>
+            </ImageContainer>
           </Item>
         ))}
       </Grid>

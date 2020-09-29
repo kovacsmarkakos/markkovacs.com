@@ -7,20 +7,13 @@ export const Wrapper = styled.div`
 export const Grid = styled.div`
   display: grid;
   align-items: center;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
   grid-template-rows: 8fr;
   gap: 1.2rem 1.2rem;
-
-  @media (max-width: 960px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  @media (max-width: 680px) {
-    grid-template-columns: 1fr;
-  }
 `;
 
 export const Item = styled.div`
+  display: flex;
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -61,5 +54,15 @@ export const Stats = styled.div`
       color: ${({ theme }) => (theme === 'light' ? '#000' : '#fff')};
       margin-left: 0.5rem;
     }
+  }
+`;
+
+export const ImageContainer = styled.div`
+  width: 50%;
+  height: 100%;
+  padding: 1rem;
+
+  img {
+    width: 100%;
   }
 `;
