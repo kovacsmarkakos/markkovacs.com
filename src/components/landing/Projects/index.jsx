@@ -27,6 +27,7 @@ export const Projects = () => {
                   url
                   homepageUrl
                   description
+                  openGraphImageUrl
                   stargazers {
                     totalCount
                   }
@@ -39,6 +40,7 @@ export const Projects = () => {
       }
     `
   );
+
   return (
     <Wrapper as={Container} id="projects">
       <h2>Projects</h2>
@@ -63,7 +65,7 @@ export const Projects = () => {
               </Stats>
             </Card>
             <ImageContainer>
-              <span>IMG</span>
+              <img src={node.openGraphImageUrl} alt="thumbnail"/>
             </ImageContainer>
           </Item>
         ))}

@@ -19,6 +19,10 @@ export const Item = styled.div`
   overflow: hidden;
   box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.11);
 
+  @media (max-width: 960px) {
+    flex-direction: column-reverse;
+  }
+
   h4 {
     color: ${({ theme }) => (theme === 'light' ? '#212121' : '#fff')};
   }
@@ -58,11 +62,9 @@ export const Stats = styled.div`
 `;
 
 export const ImageContainer = styled.div`
-  width: 50%;
-  height: 100%;
-  padding: 1rem;
+  flex: 2;
 
   img {
-    width: 100%;
+    margin-bottom: 0;
   }
 `;
