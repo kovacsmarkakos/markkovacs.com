@@ -76,7 +76,7 @@ export const SkillIcon = styled.svg`
   height: 2.5rem;
   margin-right: 1rem;
 
-  &:last-child{
+  &:last-child {
     margin-right: 0;
   }
 `;
