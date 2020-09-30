@@ -3,8 +3,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { ThemeContext } from 'providers/ThemeProvider';
 import { Header } from 'components/theme';
 import { Container, Button } from 'components/common';
-import { Wrapper, HeroWrapper, Details, /* Thumbnail */ } from './styles';
-/* import logo from 'assets/logo/kovacs-mark-svg-logo.svg'; */
+import { Wrapper, HeroWrapper, Details } from './styles';
 
 export const Hero = () => {
   const { theme } = useContext(ThemeContext);
@@ -20,10 +19,8 @@ export const Hero = () => {
             Hire me
           </Button>
         </Details>
-        {/* <Thumbnail>
-          <img src={logo} alt="Logo" />
-        </Thumbnail> */}
       </HeroWrapper>
     </Wrapper>
   );
+  
 };

@@ -39,14 +39,12 @@ export const Details = styled.div`
   }
 
   p {
-    margin-bottom: 2rem;
     font-size: 1.2rem;
     font-weight: normal;
     line-height: 1.4;
     color: ${({ theme }) => (theme === 'dark' ? '#c7c7c7' : '#707070')};
 
     @media (max-width: 960px) {
-      margin-bottom: 1.5rem;
       font-size: 1.1rem;
       line-height: 1.3;
       mix-blend-mode: ${({ theme }) => (theme === 'light' ? 'unset' : 'difference')};
@@ -67,8 +65,18 @@ export const Thumbnail = styled.div`
   }
 `;
 
-
 export const SkillsIcons = styled.div`
   display: flex;
-  flex-wrap: wrap;
+  margin-bottom: 3.5rem;
+`;
+
+export const SkillIcon = styled.svg`
+  fill: ${({ theme }) => (theme === 'dark' ? '#fff' : '#212121')};
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: 1rem;
+
+  &:last-child{
+    margin-right: 0;
+  }
 `;
