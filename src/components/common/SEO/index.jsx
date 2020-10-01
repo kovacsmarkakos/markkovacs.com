@@ -14,7 +14,7 @@ import {
   logo,
 } from 'data/config';
 
-export const SEO = ({ title = defaultTitle, description = defaultDescription, location = '' }) => {
+export const SEO = ({ title = defaultTitle, description = defaultDescription }) => {
   const structuredDataOrganization = `{ 
 		"@context": "http://schema.org",
 		"@type": "Organization",
@@ -54,7 +54,7 @@ export const SEO = ({ title = defaultTitle, description = defaultDescription, lo
       <meta name="description" content={description} />
       <meta name="image" content={Thumbnail} />
 
-      <meta property="og:url" content={`${url}${location}/?ref=smakosh.com`} />
+      <meta property="og:url" content={url} />
       <meta property="og:type" content="website" />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
