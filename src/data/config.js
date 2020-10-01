@@ -1,6 +1,6 @@
 module.exports = {
   defaultTitle: 'Mark Kovacs',
-  logo: 'https://portfolio.smakosh.com/favicon/favicon-512.png',
+  logo: '../static/favicon/favicon-512.png',
   author: 'Mark Kovacs',
   url: 'https://markkovacs.com',
   legalName: 'Mark Kovacs',
