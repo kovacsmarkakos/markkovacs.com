@@ -11,7 +11,7 @@ export const Projects = () => {
   const {
     github: {
       viewer: {
-        repositories: { edges },
+        pinnedItems: { edges },
       },
     },
   } = useStaticQuery(
@@ -19,19 +19,21 @@ export const Projects = () => {
       {
         github {
           viewer {
-            repositories(first: 3, orderBy: {field: STARGAZERS, direction: DESC}) {
+            pinnedItems(first: 3) {
               edges {
                 node {
-                  id
-                  name
-                  url
-                  homepageUrl
-                  description
-                  openGraphImageUrl
-                  stargazers {
-                    totalCount
+                  ... on GitHub_Repository {
+                    id
+                    name
+                    url
+                    homepageUrl
+                    description
+                    openGraphImageUrl
+                    stargazers {
+                      totalCount
+                    }
+                    forkCount
                   }
-                  forkCount
                 }
               }
             }
@@ -51,7 +53,11 @@ export const Projects = () => {
               <Content>
                 <h4>{node.name}</h4>
                 <p>{node.description}</p>
-                <p><a href={node.homepageUrl} target="_blank" rel="noopener noreferrer">Visit Demo</a></p> 
+                <p>
+                  <a href={node.homepageUrl} target="_blank" rel="noopener noreferrer">
+                    Visit Demo
+                  </a>
+                </p>
               </Content>
               <Stats theme={theme}>
                 <div>
@@ -65,7 +71,7 @@ export const Projects = () => {
               </Stats>
             </Card>
             <ImageContainer>
-              <img src={node.openGraphImageUrl} alt="thumbnail"/>
+              <img src={node.openGraphImageUrl} alt="thumbnail" />
             </ImageContainer>
           </Item>
         ))}

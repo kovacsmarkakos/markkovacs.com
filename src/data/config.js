@@ -1,10 +1,10 @@
 module.exports = {
-  defaultTitle: 'Mark Kovacs',
+  defaultTitle: 'Mark Kovacs - Web Developer',
   logo: '../static/favicon/favicon-512.png',
   author: 'Mark Kovacs',
   url: 'https://markkovacs.com',
   legalName: 'Mark Kovacs',
-  defaultDescription: 'I’m Mark and I’m a Web Developer!',
+  defaultDescription: 'Hello there! I’m Mark. I’m a Web Developer from Budapest, Hungary!',
   socialLinks: {
     twitter: 'http://www.twitter.com/kovacsmarkakos',
     github: 'https://github.com/kovacsmarkakos',
