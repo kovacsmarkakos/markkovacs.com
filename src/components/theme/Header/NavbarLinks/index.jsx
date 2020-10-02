@@ -1,4 +1,4 @@
-import React, {useContext} from 'react';
+import React, { useContext } from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { ThemeContext } from 'providers/ThemeProvider';
 import ToggleTheme from 'components/theme/Header/ToggleTheme';
@@ -8,18 +8,23 @@ const NavbarLinks = ({ desktop, isSidebarOn, setIsSidebarOn }) => {
   const { theme } = useContext(ThemeContext);
 
   function handleClick() {
-    !desktop ? setIsSidebarOn(!isSidebarOn) : null
+    !desktop ? setIsSidebarOn(!isSidebarOn) : null;
   }
 
   return (
     <Wrapper desktop={desktop} theme={theme}>
-      <AnchorLink onClick={handleClick} href="#projects">Projects</AnchorLink>
-      <AnchorLink onClick={handleClick} href="#about">About</AnchorLink>
-      <AnchorLink onClick={handleClick} href="#contact">Contact</AnchorLink>
+      <AnchorLink onClick={handleClick} href="#projects">
+        Projects
+      </AnchorLink>
+      <AnchorLink onClick={handleClick} href="#about">
+        About
+      </AnchorLink>
+      <AnchorLink onClick={handleClick} href="#contact">
+        Contact
+      </AnchorLink>
       <ToggleTheme />
     </Wrapper>
-  )
-
+  );
 };
 
 export default NavbarLinks;

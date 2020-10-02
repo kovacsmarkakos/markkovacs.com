@@ -48,7 +48,7 @@ export const Wrapper = styled.div`
 			}
 		`
       : `
-			padding: 6rem 2.5rem;
+			padding: 7rem 3rem;
 			display: flex;
 			flex-direction: column;
 
