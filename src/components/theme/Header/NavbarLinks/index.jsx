@@ -8,11 +8,12 @@ const NavbarLinks = ({ desktop, isSidebarOn, setIsSidebarOn }) => {
   const { theme } = useContext(ThemeContext);
 
   function handleClick() {
+    // eslint-disable-next-line no-unused-expressions
     !desktop ? setIsSidebarOn(!isSidebarOn) : null;
   }
 
   return (
-    <Wrapper desktop={desktop} theme={theme}>
+    <Wrapper desktop={desktop} theme={theme} animate="visible">
       <AnchorLink onClick={handleClick} href="#projects">
         Projects
       </AnchorLink>

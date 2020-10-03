@@ -1,10 +1,19 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
-export const Wrapper = styled.div`
+const variants = {
+  visible: { opacity: 1, transition: { duration: 1 } },
+  hidden: { opacity: 0 },
+};
+
+export const Wrapper = styled(motion.div).attrs(() => ({
+  initial: 'hidden',
+  variants,
+}))`
   a {
     display: inline-block;
-    position: relative;
     text-decoration: none;
+    position: relative;
     width: fit-content;
     color: ${({ theme }) => (theme === 'light' ? '#000' : '#fff')};
 
