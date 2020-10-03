@@ -1,8 +1,8 @@
 import React from 'react';
-import { Wrapper, Details, Thumbnail } from './styles';
 import { Container } from 'components/common';
-import ContactForm from './ContactForm';
 import contact from 'assets/illustrations/pixeltrue-business-meeting.svg';
+import { Wrapper, Details, Thumbnail } from './styles';
+import ContactForm from './ContactForm';
 
 export const Contact = () => (
   <Wrapper as={Container} id="contact">
