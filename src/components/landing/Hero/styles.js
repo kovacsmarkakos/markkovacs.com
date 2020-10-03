@@ -1,5 +1,11 @@
 import styled from 'styled-components';
 import overlayIllustration from 'assets/illustrations/method-triangle-v3.svg';
+import { motion } from 'framer-motion';
+
+const variants = {
+  visible: { opacity: 1, transition: { duration: 0.8 } },
+  hidden: { opacity: 0 },
+};
 
 export const Wrapper = styled.div`
   padding-bottom: 4rem;
@@ -21,7 +27,10 @@ export const HeroWrapper = styled.div`
   }
 `;
 
-export const Details = styled.div`
+export const Details = styled(motion.div).attrs(() => ({
+  initial: 'hidden',
+  variants,
+}))`
   flex: 1;
 
   @media (max-width: 960px) {
