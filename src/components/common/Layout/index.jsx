@@ -13,5 +13,5 @@ export const Layout = ({ children }) => {
       {children}
       <Footer />
     </>
-  )
-}
+  );
+};

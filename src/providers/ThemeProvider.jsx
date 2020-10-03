@@ -15,5 +15,5 @@ export default ({ children }) => {
     >
       {children}
     </ThemeContext.Provider>
-  )
-}
+  );
+};

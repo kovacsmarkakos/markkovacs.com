@@ -17,9 +17,7 @@ export default () => (
     }}
     validationSchema={Yup.object().shape({
       name: Yup.string().required('Full name field is required'),
-      email: Yup.string()
-        .email('Invalid email')
-        .required('Email field is required'),
+      email: Yup.string().email('Invalid email').required('Email field is required'),
       message: Yup.string().required('Message field is required'),
       recaptcha: Yup.string().required('Robots are not welcome yet!'),
     })}
@@ -94,7 +92,7 @@ export default () => (
               component={Recaptcha}
               sitekey={process.env.GATSBY_PORTFOLIO_RECAPTCHA_KEY}
               name="recaptcha"
-              onChange={value => setFieldValue('recaptcha', value)}
+              onChange={(value) => setFieldValue('recaptcha', value)}
             />
             <ErrorMessage component={Error} name="recaptcha" />
           </InputField>
