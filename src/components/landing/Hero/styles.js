@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import overlayIllustration from 'assets/illustrations/method-triangle-v3.svg';
+import overlayIllustration from 'assets/illustrations/doubleTriangle.svg';
 import { motion } from 'framer-motion';
 
 const variants = {
@@ -10,9 +10,13 @@ const variants = {
 export const Wrapper = styled.div`
   padding-bottom: 4rem;
   background-image: url(${overlayIllustration});
-  background-size: contain;
+  background-size: 60vw;
   background-position: right top;
   background-repeat: no-repeat;
+
+  @media (max-width: 768px) {
+    background-size: 80vw;
+  }
 `;
 
 export const HeroWrapper = styled.div`
@@ -21,7 +25,7 @@ export const HeroWrapper = styled.div`
   align-items: center;
   justify-content: space-between;
 
-  @media (max-width: 960px) {
+  @media (max-width: 768px) {
     flex-direction: column;
     padding: 4rem 0;
   }
@@ -33,7 +37,7 @@ export const Details = styled(motion.div).attrs(() => ({
 }))`
   flex: 1;
 
-  @media (max-width: 960px) {
+  @media (max-width: 768px) {
     width: 100%;
     margin-bottom: 2rem;
   }
@@ -43,11 +47,8 @@ export const Details = styled(motion.div).attrs(() => ({
     font-size: 36pt;
     color: ${({ theme }) => (theme === 'light' ? '#212121' : '#fff')};
 
-    @media (max-width: 960px) {
+    @media (max-width: 768px) {
       mix-blend-mode: ${({ theme }) => (theme === 'light' ? 'unset' : 'difference')};
-    }
-
-    @media (max-width: 680px) {
       font-size: 30pt;
     }
   }
@@ -58,11 +59,8 @@ export const Details = styled(motion.div).attrs(() => ({
     font-weight: normal;
     color: ${({ theme }) => (theme === 'light' ? '#707070' : '#e6e6e6')};
 
-    @media (max-width: 960px) {
+    @media (max-width: 768px) {
       mix-blend-mode: ${({ theme }) => (theme === 'light' ? 'unset' : 'difference')};
-    }
-
-    @media (max-width: 680px) {
       font-size: 26pt;
     }
   }
