@@ -55,7 +55,7 @@ export const Projects = () => {
                 <p>{node.description}</p>
                 <p>
                   <a href={node.homepageUrl} target="_blank" rel="noopener noreferrer">
-                    Visit Demo
+                    <strong>Visit Demo</strong>
                   </a>
                 </p>
               </Content>
@@ -71,7 +71,9 @@ export const Projects = () => {
               </Stats>
             </Card>
             <ImageContainer>
-              <img src={node.openGraphImageUrl} alt="thumbnail" />
+              <a href={node.homepageUrl} target="_blank" rel="noopener noreferrer">
+                <img src={node.openGraphImageUrl} alt="thumbnail" />
+              </a>
             </ImageContainer>
           </Item>
         ))}

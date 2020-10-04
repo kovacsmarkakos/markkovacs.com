@@ -19,7 +19,7 @@ export const Item = styled.div`
   overflow: hidden;
   box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.11);
 
-  @media (max-width: 960px) {
+  @media (max-width: 768px) {
     flex-direction: column-reverse;
   }
 
@@ -29,6 +29,14 @@ export const Item = styled.div`
 
   p {
     color: ${({ theme }) => (theme === 'light' ? '#707070' : '#c7c7c7')};
+  }
+
+  a {
+    color: ${({ theme }) => (theme === 'light' ? '#707070' : '#c7c7c7')};
+
+    &:hover {
+      color: #33666c;
+    }
   }
 `;
 
