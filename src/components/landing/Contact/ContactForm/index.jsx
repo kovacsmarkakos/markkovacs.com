@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import { Formik, Form, FastField, ErrorMessage } from 'formik';
-import Recaptcha from 'react-google-recaptcha';
+import ReCAPTCHA from 'react-google-recaptcha';
 import * as Yup from 'yup';
 import { Button, Input } from 'components/common';
 import { Error, Center, InputField } from './styles';
@@ -89,7 +89,7 @@ export default () => (
         {values.name && values.email && values.message && (
           <InputField>
             <FastField
-              component={Recaptcha}
+              component={ReCAPTCHA}
               sitekey={process.env.GATSBY_PORTFOLIO_RECAPTCHA_KEY}
               name="recaptcha"
               onChange={(value) => setFieldValue('recaptcha', value)}
