@@ -16,7 +16,7 @@
 - Styled-components
 - Deployed on Vercel
 
-### ✨ [Demo](markkovacs.com)
+### ✨ [Demo](https://markkovacs.com)
 
 ## Author
 
