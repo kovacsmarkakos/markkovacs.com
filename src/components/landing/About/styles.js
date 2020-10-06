@@ -28,10 +28,9 @@ export const Details = styled.div`
     width: 100%;
   }
 
-  h1 {
+  h3 {
     margin-bottom: 2rem;
-    font-size: 26pt;
-    color: ${({ theme }) => (theme === 'dark' ? '#fff' : '#212121')};
+    font-size: 1.8rem;
 
     @media (max-width: 960px) {
       mix-blend-mode: ${({ theme }) => (theme === 'light' ? 'unset' : 'difference')};

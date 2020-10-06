@@ -53,7 +53,7 @@ export const Details = styled(motion.div).attrs(() => ({
     }
   }
 
-  h4 {
+  h2 {
     margin-bottom: 2.5rem;
     font-size: 32pt;
     font-weight: normal;

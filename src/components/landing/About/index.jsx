@@ -15,7 +15,7 @@ export const About = () => {
           <img src={dev} alt="About section illustration" />
         </Thumbnail>
         <Details theme={theme}>
-          <h1>More about me</h1>
+          <h3>More about me</h3>
           <p>
             I'm a developer, because I love building and improving things. I strive to build efficient, fast and
             aesthetically pleasing applications. To achieve this goal, I like to learn and use the latest and greatest

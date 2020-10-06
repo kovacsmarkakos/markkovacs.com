@@ -13,8 +13,8 @@ export const Hero = () => {
       <Header />
       <HeroWrapper as={Container}>
         <Details theme={theme} animate="visible">
-          <h1>Hello There!</h1>
-          <h4>I’m Mark and I’m a Web Developer!</h4>
+          <h1>Hello There, I'm Mark!</h1>
+          <h2>I’m a Web Developer!</h2>
           <Button as={AnchorLink} href="#contact">
             Hire me
           </Button>
