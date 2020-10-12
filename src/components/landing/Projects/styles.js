@@ -13,7 +13,7 @@ export const Grid = styled.div`
   display: grid;
   align-items: center;
   grid-template-columns: 1fr;
-  grid-template-rows: 8fr;
+  grid-template-rows: 4fr;
   gap: 1.2rem 1.2rem;
 `;
 
@@ -37,6 +37,7 @@ export const Item = styled.div`
   }
 
   a {
+    overflow: hidden;
     color: ${({ theme }) => (theme === 'light' ? '#707070' : '#c7c7c7')};
 
     &:hover {
@@ -59,10 +60,6 @@ export const Stats = styled.div`
       margin-right: 0.5rem;
     }
 
-    img {
-      margin: 0;
-    }
-
     svg path {
       fill: ${({ theme }) => (theme === 'light' ? '#000' : '#fff')};
     }
@@ -78,6 +75,8 @@ export const ImageContainer = styled.div`
   flex: 2;
 
   img {
+    max-width: 100%;
+    max-height: 100%;
     margin-bottom: 0;
   }
 `;
