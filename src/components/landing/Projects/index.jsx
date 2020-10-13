@@ -53,11 +53,13 @@ export const Projects = () => {
               <Content>
                 <h4>{node.name}</h4>
                 <p>{node.description}</p>
-                <p>
-                  <a href={node.homepageUrl} target="_blank" rel="noopener noreferrer">
-                    <strong>Visit Demo</strong>
-                  </a>
-                </p>
+                <a href={node.homepageUrl} target="_blank" rel="noopener noreferrer">
+                  <strong>Demo </strong>
+                </a>
+                <span> | </span>
+                <a href={node.url} target="_blank" rel="noopener noreferrer">
+                  <strong> Github</strong>
+                </a>
               </Content>
               <Stats theme={theme}>
                 <div>

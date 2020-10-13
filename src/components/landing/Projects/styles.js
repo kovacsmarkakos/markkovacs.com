@@ -24,7 +24,7 @@ export const Item = styled.div`
   overflow: hidden;
   box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.11);
 
-  @media (max-width: 768px) {
+  @media (max-width: 960px) {
     flex-direction: column-reverse;
   }
 
