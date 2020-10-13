@@ -37,7 +37,6 @@ export const Item = styled.div`
   }
 
   a {
-    overflow: hidden;
     color: ${({ theme }) => (theme === 'light' ? '#707070' : '#c7c7c7')};
 
     &:hover {
@@ -53,6 +52,7 @@ export const Content = styled.div`
 export const Stats = styled.div`
   display: flex;
   align-items: center;
+  margin-top: 0.5rem;
 
   div {
     display: flex;
