@@ -19,7 +19,7 @@ export const Projects = () => {
       {
         github {
           viewer {
-            pinnedItems(first: 3) {
+            pinnedItems(first: 4) {
               edges {
                 node {
                   ... on GitHub_Repository {
