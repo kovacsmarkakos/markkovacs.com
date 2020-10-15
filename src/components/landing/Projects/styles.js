@@ -14,7 +14,7 @@ export const Grid = styled.div`
   align-items: center;
   grid-template-columns: 1fr;
   grid-template-rows: 4fr;
-  gap: 1.2rem 1.2rem;
+  gap: 1.8rem 1.8rem;
 `;
 
 export const Item = styled.div`
