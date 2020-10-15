@@ -38,6 +38,7 @@ export const Item = styled.div`
 
   a {
     color: ${({ theme }) => (theme === 'light' ? '#707070' : '#c7c7c7')};
+    transition: 0.3s;
 
     &:hover {
       color: #33666c;
