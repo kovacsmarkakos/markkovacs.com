@@ -6,7 +6,11 @@
   </a>
 </p>
 
-> This is my portfolio website.
+> This is my personal portfolio website. Built with Gatsby.
+>
+> Fetches my pinned projects from Github API.
+>
+> Scores 100% on Performance, Accessibility, SEO, PWA.
 
 ## Built with
 
