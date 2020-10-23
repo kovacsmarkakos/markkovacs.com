@@ -64,10 +64,10 @@ export const Thumbnail = styled.div`
   }
 `;
 
-export const SkillsIcons = styled.div`
+/* export const SkillsIcons = styled.div`
   display: flex;
   margin-bottom: 3.5rem;
-`;
+`; */
 
 export const SkillIcon = styled.svg`
   fill: ${({ theme }) => (theme === 'dark' ? '#fff' : '#212121')};

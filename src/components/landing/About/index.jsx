@@ -1,12 +1,23 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { ThemeContext } from 'providers/ThemeProvider';
 import { Container, Button } from 'components/common';
 import dev from 'assets/illustrations/pixeltrue-web-development.svg';
-import { Wrapper, SkillsWrapper, Details, Thumbnail, SkillsIcons, SkillIcon } from './styles';
+import { useInView } from 'react-intersection-observer';
+import { motion, useAnimation } from 'framer-motion';
+import { Wrapper, SkillsWrapper, Details, Thumbnail, SkillIcon } from './styles';
 
 export const About = () => {
   const { theme } = useContext(ThemeContext);
+
+  const controls = useAnimation();
+  const [ref, inView] = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      controls.start('visible');
+    }
+  }, [controls, inView]);
 
   return (
     <Wrapper id="about">
@@ -31,7 +42,25 @@ export const About = () => {
             videogames.
           </p>
           <p>Languages and tools:</p>
-          <SkillsIcons>
+          <motion.div
+            ref={ref}
+            animate={controls}
+            initial="hidden"
+            style={{
+              display: 'flex',
+              marginBottom: '3.5rem',
+            }}
+            variants={{
+              visible: {
+                opacity: 1,
+                transition: {
+                  delay: 0.2,
+                  duration: 1.5,
+                },
+              },
+              hidden: { opacity: 0 },
+            }}
+          >
             <SkillIcon theme={theme}>
               <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <title>HTML5 icon</title>
@@ -74,7 +103,7 @@ export const About = () => {
                 <path d="M0 2.475v10.39l3 1.733V7.67l6 3.465 6-3.465v3.465l-6 3.463v3.464l6 3.463 9-5.195V9.402l-3 1.733v3.463l-6 3.464-3-1.732 6-3.465V2.475L9 7.67 0 2.475zm24 0l-3 1.73V7.67l3-1.732V2.474Z" />
               </svg>
             </SkillIcon>
-          </SkillsIcons>
+          </motion.div>
           <Button as={AnchorLink} theme={theme} href="#contact">
             Hire me
           </Button>
