@@ -64,18 +64,49 @@ export const Thumbnail = styled.div`
   }
 `;
 
-/* export const SkillsIcons = styled.div`
-  display: flex;
-  margin-bottom: 3.5rem;
-`; */
-
-export const SkillIcon = styled.svg`
+export const SkillIcon = styled.div`
   fill: ${({ theme }) => (theme === 'dark' ? '#fff' : '#212121')};
   width: 2.5rem;
   height: 2.5rem;
-  margin-right: 1rem;
+  margin-right: 0.3rem;
+  position: relative;
+  display: inline-block;
+  padding: 0.3rem;
 
   &:last-child {
     margin-right: 0;
+  }
+
+  &:hover span {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  span {
+    visibility: hidden;
+    width: 120px;
+    background-color: #333333;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 110%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.8s;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 100%;
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: transparent transparent #333333 transparent;
+    }
   }
 `;
