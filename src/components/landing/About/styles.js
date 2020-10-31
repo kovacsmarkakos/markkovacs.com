@@ -108,5 +108,9 @@ export const SkillIcon = styled.div`
       border-style: solid;
       border-color: transparent transparent #333333 transparent;
     }
+
+    @media (max-width: 960px) {
+      display: none;
+    }
   }
 `;
