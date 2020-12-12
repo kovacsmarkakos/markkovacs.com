@@ -7,16 +7,17 @@ export const Wrapper = styled.div`
 
 export const Overlay = styled.div`
   position: fixed;
-  background: rgba(0, 0, 0, 0.7);
+  background: #27373a9e;
   width: 100%;
   height: 100%;
-  display: none;
-  transition: 0.4s;
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.4s;
 
   ${({ isSidebarOn }) =>
     isSidebarOn &&
     `
-			display: block;
+      opacity: 1;
 			z-index: 4;	
 	`}
 `;
