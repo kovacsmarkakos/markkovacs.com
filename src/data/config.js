@@ -11,7 +11,7 @@ module.exports = {
     linkedin: 'https://www.linkedin.com/in/márk-kovács-0363b61b7/',
     instagram: 'https://instagram.com/mark.akos',
   },
-  googleAnalyticsID: 'UA-179483873-1',
+  googleAnalyticsID: 'G-R8R9HVJN83',
   themeColor: '#33666C',
   backgroundColor: '#fff',
   social: {
