@@ -50,6 +50,7 @@ export const Details = styled(motion.div).attrs(() => ({
   }
 
   h2 {
+    max-width: 450px;
     margin-bottom: 2.5rem;
     font-size: 32pt;
     font-weight: normal;

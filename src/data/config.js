@@ -4,7 +4,7 @@ module.exports = {
   author: 'Mark Kovacs',
   url: 'https://markkovacs.com',
   legalName: 'Mark Kovacs',
-  defaultDescription: 'Hello there! I’m Mark. I’m a Web Developer from Budapest, Hungary!',
+  defaultDescription: 'Hello there! I’m Mark. I’m a UI Designer and Frontend Developer from Budapest, Hungary!',
   socialLinks: {
     twitter: 'http://www.twitter.com/kovacsmarkakos',
     github: 'https://github.com/kovacsmarkakos',

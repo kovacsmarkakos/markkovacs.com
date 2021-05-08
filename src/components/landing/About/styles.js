@@ -72,9 +72,14 @@ export const SkillIcon = styled.div`
   position: relative;
   display: inline-block;
   padding: 0.3rem;
+  transition: all 0.2s;
 
   &:last-child {
     margin-right: 0;
+  }
+
+  &:hover {
+    transform: translateY(-2px);
   }
 
   &:hover span {

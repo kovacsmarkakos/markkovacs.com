@@ -14,7 +14,7 @@ export const Hero = () => {
       <HeroWrapper as={Container}>
         <Details theme={theme} animate="visible">
           <h1>Hello There, I'm Mark!</h1>
-          <h2>I’m a Web Developer!</h2>
+          <h2>I’m a UI Designer and Frontend Developer</h2>
           <Button as={AnchorLink} href="#contact">
             Hire me
           </Button>
